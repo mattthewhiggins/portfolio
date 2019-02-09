@@ -1,5 +1,7 @@
 var test = document.getElementById("test");
 
+document.onscroll = function() {
+
 		scrollTop = document.documentElement.scrollTop;
     test.innerHTML = scrollTop;
 
