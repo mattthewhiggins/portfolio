@@ -11,13 +11,13 @@ body {
 
 @font-face {
   font-family: CircularStd;
-  src: url(/fonts/CircularStd-Book.otf) format('otf');
+  src: url(/fonts/CircularStd-Book.otf) format('opentype');
   font-weight: 300;
 }
 
 @font-face {
   font-family: CircularStd-Black;
-  src: url(/fonts/CircularStd-Black.otf) format('otf');
+  src: url(/fonts/CircularStd-Black.otf) format('opentype');
   font-weight: 900;
 }
 
