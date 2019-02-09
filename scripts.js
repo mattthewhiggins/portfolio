@@ -1,4 +1,4 @@
-var test = document.getElementById("test");
+var test = document.getElementById("count");
 
 document.onscroll = function() {
 

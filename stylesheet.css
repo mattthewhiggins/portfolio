@@ -226,3 +226,9 @@ a:hover {
   color: #450077;
   margin-top: -75px;
 }
+
+/* makes counter invisible */
+
+.counter {
+  display: none;
+}
