@@ -1,0 +1,228 @@
+/* styling for page */
+body {
+  background: #fff;
+  margin: 0;
+  max-width: 100%;
+  will-change: background;
+  transition: background  1.5s;
+  overflow-x: hidden; /* for homepage text, as it's off-screen */
+}
+
+/* typography styles */
+h1 {
+  font-family: CircularStd-Black;
+  font-size: 300px;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: CircularStd-Black;
+  font-size: 200px;
+  text-align: center;
+  margin-top: 0px;
+}
+h3 {
+  font-family: CircularStd-Black;
+  font-size: 54px;
+  color: #FFF;
+  margin-bottom: 0px;
+}
+h4 {
+  font-family: CircularStd-Black;
+  font-size: 54px;
+  color: #FFF;
+  margin-bottom: 0px;
+  margin-top: 160px;
+  padding-bottom: 20px;
+}
+h5 {
+  font-family: CircularStd-Book;
+  font-size: 54px;
+  font-weight: lighter;
+  color: #FFF;
+  margin-top: 0px;
+  }
+h6 {
+  font-family: CircularStd-Black;
+  font-size: 32px;
+  color: #FFF900;
+}
+p {
+  font-family: CircularStd-Book;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+/* styling for text links */
+a {
+  font-family: CircularStd-Book;
+  font-size: 32px;
+  font-weight: lighter;
+  color: #00FFC9;
+  text-decoration: none;
+}
+a:hover {
+  color: Black;
+  background-color: #00FFC9;
+}
+
+/* makes cv text indented */
+.cv-text {
+  width: 55%;
+  padding-top: 5%;
+  padding-left: 13%;
+  padding-bottom: 5%;
+}
+
+/* specific class for email on a tag */
+.mail-text {
+  font-family: CircularStd-Black;
+  font-size: 32px;
+  color: #FFF900;
+}
+.mail-text:hover {
+  color: Black;
+  background-color: #FFF900;
+}
+
+/* makes button sticky after scroll */
+.sticky-button-portfolio {
+  position: sticky;
+  top: 100px;
+  margin-top: 100px;
+  padding-right: 13%;
+  float: right;
+}
+.sticky-button-cv {
+  position: sticky;
+  z-index: 1;
+  top: 100px;
+  margin-top: 100px;
+  padding-right: 6%;
+  float: right;
+}
+
+/* styling for portfolio button */
+.button-portfolio {
+  height: 72px;
+  font-family: CircularStd-Black;
+  font-size: 24px;
+  color: #000;
+  background: #fff;
+  border-radius: 100px;
+  width: 200px;
+  cursor: pointer;
+  border-width: 0px;
+  border-color: #fff;
+
+  transition: color 0.3s ease; /* vendorless fallback */
+  -o-transition: color 0.3s ease; /* opera */
+  -ms-transition: color 0.3s ease; /* IE 10 */
+  -moz-transition: color 0.3s ease; /* Firefox */
+  -webkit-transition: color 0.3s ease; /*safari and chrome */
+
+  transition: background 0.3s ease; /* vendorless fallback */
+  -o-transition: background 0.3s ease; /* opera */
+  -ms-transition: background 0.3s ease; /* IE 10 */
+  -moz-transition: background 0.3s ease; /* Firefox */
+  -webkit-transition: background 0.3s ease; /*safari and chrome */
+}
+.button-portfolio:hover {
+  background: #00FFC9;
+}
+.button-portfolio:focus {
+  outline: 0px;
+  border-color: #fff;
+}
+
+/* styling for cv button */
+.button-cv {
+  height: 72px;
+  font-family: CircularStd-Black;
+  font-size: 24px;
+  color: #001991;
+  background: #fff;
+  border-radius: 100px;
+  width: 250px;
+  cursor: pointer;
+  border-width: 0px;
+  border-color: #fff;
+
+  transition: color 0.3s ease; /* vendorless fallback */
+  -o-transition: color 0.3s ease; /* opera */
+  -ms-transition: color 0.3s ease; /* IE 10 */
+  -moz-transition: color 0.3s ease; /* Firefox */
+  -webkit-transition: color 0.3s ease; /*safari and chrome */
+
+  transition: background 0.3s ease; /* vendorless fallback */
+  -o-transition: background 0.3s ease; /* opera */
+  -ms-transition: background 0.3s ease; /* IE 10 */
+  -moz-transition: background 0.3s ease; /* Firefox */
+  -webkit-transition: background 0.3s ease; /*safari and chrome */
+}
+.button-cv:hover {
+  background: #001991;
+  color: #fff;
+}
+.button-cv:focus {
+  outline: 0px;
+  border-color: #fff;
+}
+}
+
+/* specific padding for when 2 text elements next to one another */
+.text-block {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+/* over-rides body styling */
+.cv {
+  background: #000;
+}
+
+/* lets text on homepage overflow */
+.intro-text {
+  width:200%
+}
+
+/* centres images */
+.home-img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* full width quickr image */
+.quickr-img {
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+}
+
+/* text styles for sections */
+.listen-title {
+  color: #001991;
+  margin-top: -150px;
+}
+.barclays-title {
+  color: #00FFC9;
+  margin-top: -100px;
+}
+.c4-title {
+  color: #FF004F;
+  margin-top: -75px;
+}
+.quickr-title {
+  color: #DEFF00;
+  margin-top: -175px;
+}
+.commute-title {
+  color: #450077;
+  margin-top: -75px;
+}
