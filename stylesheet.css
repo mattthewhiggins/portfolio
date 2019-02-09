@@ -8,8 +8,16 @@ body {
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: "CircularStd";
+  font-weight: normal;
+  src: url('/fonts/CircularStd-Book.otf') format ('opentype')
+}
+
+@font-face {
+  font-family: "CircularStd";
+  font-weight: bold;
+  src: url('/fonts/CircularStd-Black.otf') format ('opentype')
 }
 
 /* typography styles */
