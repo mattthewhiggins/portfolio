@@ -8,6 +8,10 @@ body {
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* typography styles */
 h1 {
   font-family: CircularStd-Black;
@@ -184,9 +188,18 @@ a:hover {
   background: #000;
 }
 
-/* lets text on homepage overflow */
-.intro-text {
-  width:200%
+/* text for intro */
+.top-title,
+.bottom-title {
+  text-transform: uppercase;
+}
+
+.top-title {
+  margin-left: -500px;
+}
+
+.bottom-title {
+  margin-left: -2500px;
 }
 
 /* centres images */
@@ -228,7 +241,11 @@ a:hover {
 }
 
 /* makes counter invisible */
-
 .counter {
   display: none;
+}
+
+.header {
+  height: 80vh;
+  width: 200%;
 }

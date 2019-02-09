@@ -26,3 +26,30 @@ document.onscroll = function() {
 
     }
 };
+
+// The code below makes the text move and fade on scroll
+
+
+var topTitle = $('.top-title'),
+		bottomTitle = $('.bottom-title');
+
+var fadeStart = 10,
+		fadeUntil = 800,
+		moveSpeed = 2; // Higher = slower
+
+
+$(window).scroll(function(e) {
+		var scrollTop = $(window).scrollTop();
+		var opacity = 0;
+		var topTitlePos = scrollTop / moveSpeed + 'px';
+		var bottomTitlePos = scrollTop / moveSpeed + 'px';
+
+		if (scrollTop <= fadeStart ) {
+				opacity = 1;
+		} else if ( scrollTop <= fadeUntil ) {
+				opacity = 1 - scrollTop / fadeUntil;
+		}
+
+		topTitle.css({'transform': 'translateX(' + topTitlePos + ')', 'opacity': opacity});
+		bottomTitle.css({'transform': 'translateX(-' + bottomTitlePos + ')', 'opacity': opacity});
+});
