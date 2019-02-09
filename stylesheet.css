@@ -4,7 +4,8 @@ body {
   margin: 0;
   max-width: 100%;
   will-change: background;
-  transition: background  1.5s;
+  -webkit-transition: background  1.5s;
+  -o-transition: background  1.5s;
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
@@ -102,14 +103,14 @@ a:hover {
 
 /* makes button sticky after scroll */
 .sticky-button-portfolio {
-  position: sticky;
+  position: -webkit-sticky;
   top: 100px;
   margin-top: 100px;
   padding-right: 13%;
   float: right;
 }
 .sticky-button-cv {
-  position: sticky;
+  position: -webkit-sticky;
   z-index: 1;
   top: 100px;
   margin-top: 100px;
@@ -183,7 +184,7 @@ a:hover {
   outline: 0px;
   border-color: #fff;
 }
-}
+
 
 /* specific padding for when 2 text elements next to one another */
 .text-block {
