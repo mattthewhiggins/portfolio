@@ -9,8 +9,15 @@ body {
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
+
+/* smoothes out the scrolling on certain broswers */
+html {
+  scroll-behavior: smooth;
+}
+
+/* import custom font */
 @font-face {
-  font-family: CircularStd;
+  font-family: CircularStd-Book;
   src: url(/fonts/CircularStd-Book.otf) format('opentype');
   font-weight: 300;
 }
@@ -21,10 +28,10 @@ body {
   font-weight: 900;
 }
 
-/* typography styles */
+/* font styles */
 h1 {
   font-family: CircularStd-Black;
-  font-size: 300px;
+  font-size: 350px;
   color: #000;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -115,7 +122,7 @@ a:hover {
   position: -webkit-sticky;
   z-index: 1;
   top: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   padding-right: 6%;
   float: right;
 }
@@ -206,11 +213,13 @@ a:hover {
 }
 
 .top-title {
-  margin-left: -500px;
+  margin-top: -140px;
+  margin-left: -300px;
 }
 
 .bottom-title {
-  margin-left: -2500px;
+  margin-top: -140px;
+  margin-left: -2800px;
 }
 
 /* centres images */
@@ -240,7 +249,7 @@ a:hover {
 }
 .c4-title {
   color: #FF004F;
-  margin-top: -75px;
+  margin-top: -120px;
 }
 .quickr-title {
   color: #DEFF00;
@@ -252,11 +261,12 @@ a:hover {
 }
 
 /* makes counter invisible */
-.counter {
+#count {
   display: none;
 }
 
+/* size of text on viewport */
 .header {
-  height: 80vh;
-  width: 200%;
+  height: 100vh;
+  width: 200vw;
 }
