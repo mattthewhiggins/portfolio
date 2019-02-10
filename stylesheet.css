@@ -17,32 +17,47 @@ html {
 
 /* import custom font */
 @font-face {
-    font-family: 'CircularStd-Black';
-    src: url('/fonts/CircularStd-Black.otf') format('opentype'),
+  font-family: 'CircularStd';
+  src: url('../fonts/CircularStd-Black.eot');
+  src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/CircularStd-Black.woff') format('woff'), url('../fonts/CircularStd-Black.ttf') format('truetype'), url('../fonts/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../fonts/CircularStd-Book.eot');
+  src: url('../fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/CircularStd-Book.woff') format('woff'), url('../fonts/CircularStd-Book.ttf') format('truetype'), url('../fonts/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* font styles */
 h1 {
-  font-family: 'CircularStd-Black';
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 350px;
   color: #000;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 h2 {
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 200px;
   text-align: center;
   margin-top: 0px;
 }
 h3 {
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 54px;
   color: #FFF;
   margin-bottom: 0px;
 }
 h4 {
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 54px;
   color: #FFF;
   margin-bottom: 0px;
@@ -50,19 +65,22 @@ h4 {
   padding-bottom: 20px;
 }
 h5 {
-  font-family: CircularStd-Book;
+  font-family: 'CircularStd';
+  font-weight: 400;
   font-size: 54px;
   font-weight: lighter;
   color: #FFF;
   margin-top: 0px;
   }
 h6 {
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 32px;
   color: #FFF900;
 }
 p {
-  font-family: CircularStd-Book;
+  font-family: 'CircularStd';
+  font-weight: 400;
   font-size: 32px;
   line-height: 42px;
   font-weight: lighter;
@@ -71,7 +89,8 @@ p {
 
 /* styling for text links */
 a {
-  font-family: CircularStd-Book;
+  font-family: 'CircularStd';
+  font-weight: 400;
   font-size: 32px;
   font-weight: lighter;
   color: #00FFC9;
@@ -92,7 +111,8 @@ a:hover {
 
 /* specific class for email on a tag */
 .mail-text {
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 32px;
   color: #FFF900;
 }
@@ -123,7 +143,8 @@ a:hover {
 /* styling for portfolio button */
 .button-portfolio {
   height: 72px;
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 24px;
   color: #000;
   background: #fff;
@@ -156,7 +177,8 @@ a:hover {
 /* styling for cv button */
 .button-cv {
   height: 72px;
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd';
+  font-weight: 800;
   font-size: 24px;
   color: #001991;
   background: #fff;
