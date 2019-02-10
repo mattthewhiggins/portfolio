@@ -10,6 +10,11 @@ body {
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
+/* changes background */
+.cv-body {
+  background: black;
+}
+
 /* smoothes out the scrolling on certain broswers */
 html {
   scroll-behavior: smooth;
