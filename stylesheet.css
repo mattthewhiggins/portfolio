@@ -17,20 +17,13 @@ html {
 
 /* import custom font */
 @font-face {
-  font-family: CircularStd-Book;
-  src: url(/fonts/CircularStd-Book.otf) format('opentype');
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: CircularStd-Black;
-  src: url(/fonts/CircularStd-Black.otf) format('opentype');
-  font-weight: 900;
+    font-family: 'CircularStd-Black';
+    src: url('/fonts/CircularStd-Black.otf') format('opentype'),
 }
 
 /* font styles */
 h1 {
-  font-family: CircularStd-Black;
+  font-family: 'CircularStd-Black';
   font-size: 350px;
   color: #000;
   margin-top: 0px;
@@ -198,7 +191,7 @@ a:hover {
 /* specific padding for when 2 text elements next to one another */
 .text-block {
   padding-top: 40px;
-  padding-bottom: 120px;
+  padding-bottom: 10px;
 }
 
 /* over-rides body styling */
