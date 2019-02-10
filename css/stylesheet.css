@@ -10,7 +10,6 @@ body {
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
-
 /* smoothes out the scrolling on certain broswers */
 html {
   scroll-behavior: smooth;
@@ -45,7 +44,7 @@ html {
 h1 {
   font-size: 350px;
   color: #000;
-  margin-top: 0px;
+  margin-top: -100px;
   margin-bottom: 0px;
 }
 h2 {
@@ -84,6 +83,28 @@ p {
   color: #fff;
 }
 
+/* size of text on viewport */
+.header {
+  margin-top: -140px;
+  height: 100vh;
+  width: 200vw;
+}
+
+/* text for intro */
+.top-title,
+.bottom-title {
+  text-transform: uppercase;
+  margin-top: -140px;
+}
+
+.top-title {
+  margin-left: -300px;
+}
+
+.bottom-title {
+  margin-left: -2800px;
+}
+
 /* styling for text links */
 a {
   font-family: 'CircularStd-Book';
@@ -93,7 +114,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: Black;
+  color: black;
   background-color: #00FFC9;
 }
 
@@ -111,27 +132,21 @@ a:hover {
   color: #FFF900;
 }
 .mail-text:hover {
-  color: Black;
+  color: black;
   background-color: #FFF900;
 }
 
 /* makes button sticky after scroll */
 .sticky-button-portfolio {
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   top: 100px;
-  margin-top: 100px;
-  padding-right: 13%;
-  float: right;
+  right: 100px;
 }
 .sticky-button-cv {
-  position: sticky;
-  position: -webkit-sticky;
-  z-index: 1;
+  position: fixed;
   top: 100px;
-  margin-top: 50px;
-  padding-right: 6%;
-  float: right;
+  right: 100px;
+  z-index: 1;
 }
 
 /* styling for portfolio button */
@@ -213,28 +228,11 @@ a:hover {
   background: #000;
 }
 
-/* text for intro */
-.top-title,
-.bottom-title {
-  text-transform: uppercase;
-}
-
-.top-title {
-  margin-top: -140px;
-  margin-left: -300px;
-}
-
-.bottom-title {
-  margin-top: -140px;
-  margin-left: -2800px;
-}
-
 /* centres images */
 .home-img {
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   position: relative;
 }
 
@@ -272,8 +270,7 @@ a:hover {
   display: none;
 }
 
-/* size of text on viewport */
-.header {
-  height: 100vh;
-  width: 200vw;
+#div2 {
+  margin-top: -200px;
+  padding-top: 400px;
 }
