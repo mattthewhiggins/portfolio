@@ -1,6 +1,7 @@
 /* styling for page */
 body {
   background: #fff;
+  max-width: 100%;
   font-family: 'CircularStd-Black';
   margin: 0;
   will-change: background;
