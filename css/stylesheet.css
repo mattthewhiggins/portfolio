@@ -1,12 +1,12 @@
 /* styling for page */
 body {
   background: #fff;
-  max-width: 100%;
   font-family: 'CircularStd-Black';
   margin: 0;
   will-change: background;
   -webkit-transition: background  1.5s;
   -o-transition: background  1.5s;
+  max-width: 100vw;
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
