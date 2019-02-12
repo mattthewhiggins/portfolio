@@ -37,7 +37,7 @@ html {
   font-style: normal;
 }
 
-/* font styles */
+/* header styles */
 h1 {
   font-size: 350px;
   color: #000;
@@ -66,7 +66,8 @@ h5 {
   font-size: 54px;
   font-weight: lighter;
   color: #FFF;
-  margin-top: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   }
 h6 {
   font-size: 32px;
@@ -80,39 +81,39 @@ p {
   color: #fff;
 }
 
-/* size of text on viewport */
-.header {
-  margin-top: -140px;
-  height: 100vh;
-  width: 200vw;
-}
-
-/* text for intro */
-.top-title,
-.bottom-title {
-  text-transform: uppercase;
-  margin-top: -140px;
-}
-
-.top-title {
-  margin-left: -300px;
-}
-
-.bottom-title {
-  margin-left: -2800px;
-}
-
-/* styling for text links */
+/* link styles */
 a {
-  font-family: 'CircularStd-Book';
-  font-size: 32px;
-  font-weight: lighter;
   color: #00FFC9;
   text-decoration: none;
 }
 a:hover {
   color: black;
   background-color: #00FFC9;
+}
+
+/* size of intro text on viewport */
+.header {
+  margin-top: -140px;
+  height: 100vh;
+  width: 200vw;
+}
+
+/* both texts for intro */
+.top-title,
+.bottom-title {
+  text-transform: uppercase;
+  margin-top: -140px;
+  white-space: nowrap;
+}
+
+/* specific to first line of intro */
+.top-title {
+  margin-left: -300px;
+}
+
+/* specific to second line of intro */
+.bottom-title {
+  margin-left: -2800px;
 }
 
 /* makes cv text indented */
@@ -123,9 +124,14 @@ a:hover {
   padding-bottom: 5%;
 }
 
+/* specific padding for when 2 text elements next to one another */
+.text-block {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
 /* specific class for email on a tag */
 .mail-text {
-  font-size: 32px;
   color: #FFF900;
 }
 .mail-text:hover {
@@ -137,12 +143,12 @@ a:hover {
 .sticky-button-portfolio {
   position: fixed;
   top: 100px;
-  right: 100px;
+  right: 50px;
 }
 .sticky-button-cv {
   position: fixed;
   top: 100px;
-  right: 100px;
+  right: 50px;
   z-index: 1;
 }
 
@@ -209,13 +215,6 @@ a:hover {
   outline: 0;
 }
 
-
-/* specific padding for when 2 text elements next to one another */
-.text-block {
-  padding-top: 40px;
-  padding-bottom: 10px;
-}
-
 /* over-rides body styling */
 .cv {
   background: #000;
@@ -227,8 +226,8 @@ a:hover {
   position: relative;
 }
 
-/* full width quickr image */
-.quickr-img {
+/* full width image */
+.fullwidth-img {
   width: 100%;
   position: relative;
 }
@@ -260,7 +259,110 @@ a:hover {
   display: none;
 }
 
+/* pushes project 1 down out of vh */
 #div2 {
   margin-top: -200px;
   padding-top: 400px;
 }
+
+/* styles for 0 - 640 */
+@media only screen and (max-width: 640px) {
+
+  /* header styles */
+  h1 {
+      font-size: 200px;
+    }
+  h2 {
+      font-size: 72px;
+    }
+  h3 {
+      font-size: 32px;
+    }
+  h4 {
+      font-size: 32px;
+      margin-top: 0;
+      padding-bottom: 10px;
+    }
+  h5 {
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
+
+  /* link styles */
+  p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  a {
+    font-size: 18px;
+  }
+
+  /* makes cv text indented */
+  .cv-text {
+    width: 80%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+  }
+
+  /* specific padding for when 2 text elements next to one another */
+  .text-block {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  /* text for intro */
+  .top-title,
+  .bottom-title {
+      text-transform: uppercase;
+      margin-top: -60px;
+    }
+
+  .bottom-title {
+      margin-left: -1200px;
+    }
+
+  /* size of text on viewport */
+  .header {
+      margin-top: -80px;
+      width: 150vw;
+    }
+
+  /* makes button sticky after scroll */
+  .sticky-button-portfolio {
+    top: 20px;
+    right: 20px;
+    }
+
+  .sticky-button-cv {
+  top: 20px;
+  right: 20px;
+  }
+
+
+  /* makes image 90% */
+  .home-img {
+      width: 90%;
+    }
+
+  /* text styles for sections */
+  .listen-title {
+      margin-top: -60px;
+    }
+  .barclays-title {
+      margin-top: -40px;
+    }
+  .quickr-title {
+      margin-top: -55px;
+    }
+  .whodat-title {
+      margin-top: -40px;
+    }
+
+  /* pushes project 1 down out of vh */
+  #div2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+ }
