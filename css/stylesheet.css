@@ -6,6 +6,7 @@ html {
   box-sizing: inherit;
 }
 
+
 /* styling for page */
 body {
   background: #fff;
@@ -320,11 +321,6 @@ a:hover {
     padding-bottom: 10px;
   }
 
-  .o-wrapper {
-    overflow: hidden;
-    height: 150vh;
-  }
-
   /* text for intro */
   .top-title,
   .bottom-title {
@@ -341,6 +337,11 @@ a:hover {
       margin-top: -80px;
       width: 150vw;
     }
+
+    /* Disables horizontal scroll */
+    .o-wrapper {
+        overflow-x: hidden;
+      }
 
   /* makes button sticky after scroll */
   .sticky-button-portfolio {
