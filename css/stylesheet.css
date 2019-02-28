@@ -18,6 +18,10 @@ body {
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
+.o-wrapper {
+  overflow: hidden;
+}
+
 /* changes background */
 .cv-body {
   background: black;
