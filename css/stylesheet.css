@@ -22,9 +22,19 @@ body {
   overflow: hidden;
 }
 
-/* changes background */
-.cv-body {
+/* black background */
+.black-body {
   background: black;
+}
+
+/* pink background */
+.pink-body {
+  background: #FFE3EB;
+}
+
+/* changes background */
+.barclays-body {
+  background: #0029BF;
 }
 
 /* smoothes out the scrolling on certain broswers */
@@ -54,22 +64,22 @@ h1 {
   font-size: 350px;
   color: #000;
   margin-top: -100px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 h2 {
   font-size: 200px;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
 }
 h3 {
   font-size: 54px;
   color: #FFF;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 h4 {
   font-size: 54px;
   color: #FFF;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 160px;
   padding-bottom: 20px;
 }
@@ -83,7 +93,8 @@ h5 {
   }
 h6 {
   font-size: 32px;
-  color: #FFF900;
+  color: #FFFFFF;
+  margin: 0;
 }
 p {
   font-family: 'CircularStd-Book';
@@ -93,12 +104,19 @@ p {
   color: #fff;
 }
 
-/* link styles */
-a {
+/* colour when selecting text */
+::selection {
+  color: black;
+  background: rgba(255,251,0,0.99);
+}
+
+
+/* styles for green links */
+.green-link {
   color: #00FFC9;
   text-decoration: none;
 }
-a:hover {
+.green-link:hover {
   color: black;
   background-color: #00FFC9;
 }
@@ -128,21 +146,77 @@ a:hover {
   margin-left: -2800px;
 }
 
-/* makes cv text indented */
-.cv-text {
-  width: 55%;
+/* makes content indented */
+.content-indented {
   padding-top: 5%;
-  padding-left: 13%;
-  padding-bottom: 5%;
+  padding-right: 25%;
+  padding-left: 15%;
 }
 
-/* specific padding for when 2 text elements next to one another */
+.tight-margin {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.loose-margin {
+  margin-bottom: 100px;
+}
+
+.loose-padding {
+  padding-bottom: 100px;
+}
+
+/* indents text with black background */
+.assistance-intro {
+  background: black;
+  padding-top: 80px;
+  padding-right: 30%;
+  padding-bottom: 48px;
+  padding-left: 15%;
+}
+
+/* specific padding for when 2 text elements above and below one another */
 .text-block {
   padding-top: 40px;
   padding-bottom: 10px;
 }
 
 /* specific class for email on a tag */
+.project-text {
+  color: #55E5EF;
+}
+
+/* makes text purple */
+.purple-text {
+  color: #450077;
+}
+
+.logo-image{
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+/* makes logo 100px in height */
+.logo-1 {
+  height: 100px;
+  display: inline;
+  margin-right: 32px;
+}
+
+.logo {
+  height: 100px;
+  display: inline;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.inline {
+  display: inline;
+}
+
+/* specific class for project text */
 .mail-text {
   color: #FFF900;
 }
@@ -227,20 +301,24 @@ a:hover {
   outline: 0;
 }
 
-/* over-rides body styling */
-.cv {
-  background: #000;
-}
-
 /* centres images */
 .home-img {
   width: 80%;
   position: relative;
 }
 
+.centre-img {
+  padding-top: 64px;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* full width image */
 .fullwidth-img {
   width: 100%;
+  margin-bottom: -4px;
   position: relative;
 }
 
@@ -292,22 +370,21 @@ a:hover {
     }
   h4 {
       font-size: 32px;
-      margin-top: 0;
-      padding-bottom: 10px;
+      margin-top: 40px;
     }
   h5 {
-      font-size: 18px;
+      font-size: 24px;
       line-height: 32px;
       margin-bottom: 40px;
     }
 
   /* link styles */
   p {
-      font-size: 18px;
+      font-size: 24px;
       line-height: 32px;
     }
   a {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   /* makes cv text indented */
@@ -317,6 +394,7 @@ a:hover {
     padding-left: 10%;
     padding-bottom: 5%;
   }
+
 
   /* specific padding for when 2 text elements next to one another */
   .text-block {
@@ -352,11 +430,9 @@ a:hover {
   right: 20px;
   }
 
-
-  /* makes image 90% */
-  .home-img {
-      width: 90%;
-    }
+  .assistance-intro {
+    padding-right: 15%;
+  }
 
   /* text styles for sections */
   .listen-title {
@@ -377,4 +453,11 @@ a:hover {
       margin-top: -50px;
       padding-top: 0;
     }
+ }
+
+ /* makes content indented */
+ .content-indented {
+   padding-top: 5%;
+   padding-right: 15%;
+   padding-left: 15%;
  }

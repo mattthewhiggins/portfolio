@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="99px" height="100px" viewBox="0 0 99 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook_Messenger_logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="6.76%" x2="50%" y2="95.6%" id="linearGradient-1">
+            <stop stop-color="#00C6FF" offset="0%"></stop>
+            <stop stop-color="#0068FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-2" transform="translate(-546.000000, -10857.000000)">
+            <g id="Group-7" transform="translate(220.000000, 10772.000000)">
+                <g id="Facebook_Messenger_logo" transform="translate(326.000000, 85.000000)">
+                    <path d="M18.2332366,82.0884956 L18.2332366,99.8761062 L34.8462321,90.420354 C39.4771339,91.7566372 44.3997321,92.4778761 49.5,92.4778761 C76.8399107,92.4778761 99,71.7743363 99,46.2389381 C99,20.7017699 76.8399107,2.84217094e-14 49.5,2.84217094e-14 C22.1618571,2.84217094e-14 0,20.7017699 0,46.2389381 C0,60.699115 7.10590179,73.6106195 18.2332366,82.0884956 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                    <polygon id="Path" fill="#FFFFFF" points="44.2141071 33.5743363 17.5190223 61.8716814 41.8137991 48.5265487 54.5074554 61.8716814 81.0518304 33.5743363 57.0266518 46.6858407 44.2141071 33.5743363"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
