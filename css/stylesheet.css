@@ -421,13 +421,13 @@ p {
 
   /* makes button sticky after scroll */
   .sticky-button-portfolio {
-    top: 20px;
-    right: 20px;
+    top: 80vh;
+    right: 62px;
     }
 
   .sticky-button-cv {
-  top: 20px;
-  right: 20px;
+    top: 80vh;
+    right: 62px;
   }
 
   .assistance-intro {
