@@ -67,7 +67,7 @@ h1 {
   margin-bottom: 0;
 }
 h2 {
-  font-size: 200px;
+  font-size: 140px;
   text-align: center;
   margin-top: 0;
 }
@@ -110,6 +110,15 @@ p {
   background: rgba(255,251,0,0.99);
 }
 
+/* background colours */
+.bg-1 {
+  background: #0029BF;
+}
+
+.link-1 {
+  color: black;
+  text-decoration: underline;
+}
 
 /* styles for green links */
 .green-link {
@@ -269,6 +278,11 @@ p {
   outline: 0;
 }
 
+.width-full {
+  max-width: 100%;
+  margin-bottom: -4px;
+}
+
 /* styling for cv button */
 .button-cv {
   height: 72px;
@@ -323,26 +337,23 @@ p {
 }
 
 /* text styles for sections */
-.listen-title {
-  color: #001991;
-  margin-top: -150px;
+.title-1 {
+  color: #00FFFF;
+  margin-top: -30px;
 }
-.barclays-title {
+.title-2 {
+  color: #2F3353;
+  margin-top: -50px;
+}
+.title-3 {
   color: #55E5EF;
-  margin-top: -100px;
-}
-.c4-title {
-  color: #FF004F;
   margin-top: -80px;
 }
-.quickr-title {
-  color: #450077;
-  margin-top: -175px;
-}
-.whodat-title {
+.title-4 {
   color: #FFFB00;
-  margin-top: -75px;
+  margin-top: -80px;
 }
+
 
 /* makes counter invisible */
 #count {

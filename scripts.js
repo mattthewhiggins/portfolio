@@ -16,7 +16,7 @@ document.onscroll = function() {
 
         heightBefore = 0;
         if (i > 0){
-        		heightBefore = allDivs[i-1].offsetHeight / 2;
+        		heightBefore = allDivs[i-1].offsetHeight / 3;
         }
 
         if (scrollTop > curDiv.offsetTop - heightBefore){
