@@ -18,28 +18,12 @@ body {
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
 
-.o-wrapper {
-  overflow: hidden;
-}
-
-/* black background */
-.black-body {
-  background: black;
-}
-
-/* pink background */
-.pink-body {
-  background: #FFE3EB;
-}
-
-/* changes background */
-.barclays-body {
-  background: #0029BF;
-}
-
-/* smoothes out the scrolling on certain broswers */
-html {
-  scroll-behavior: smooth;
+/* custom font */
+@font-face {
+  font-family: LIQUIDO-Fluid;
+  src: url(LIQUIDO-Fluid.otf);
+  font-weight: 100;
+  font-style: normal;
 }
 
 /* import custom font */
@@ -61,39 +45,35 @@ html {
 
 /* header styles */
 h1 {
-  font-size: 350px;
+  font-size: 600px;
   color: #000;
   margin-top: -100px;
   margin-bottom: 0;
 }
 h2 {
-  font-size: 140px;
-  text-align: center;
+  font-size: 72px;
   margin-top: 0;
+  margin-bottom: 0;
+
 }
 h3 {
   font-size: 54px;
-  color: #FFF;
   margin-bottom: 0;
 }
 h4 {
   font-size: 54px;
-  color: #FFF;
   margin-bottom: 0;
-  margin-top: 160px;
   padding-bottom: 20px;
 }
 h5 {
   font-family: 'CircularStd-Book';
   font-size: 54px;
   font-weight: lighter;
-  color: #FFF;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 64px;
   }
 h6 {
   font-size: 32px;
-  color: #FFFFFF;
   margin: 0;
 }
 p {
@@ -101,8 +81,50 @@ p {
   font-size: 32px;
   line-height: 42px;
   font-weight: lighter;
-  color: #fff;
 }
+
+.liquid {
+  font-family: liquido;
+}
+
+
+.black-body {
+  background-color: black;
+}
+
+
+.wrapper {
+  overflow: hidden;
+}
+
+.section-1 {
+  max-width: 85%;
+  background: white;
+  padding-bottom: 100px;
+}
+
+.section-2 {
+  background: black;
+}
+
+.section-4 {
+  background: #0F1627;
+}
+
+.section-5 {
+background: #FF004F;
+}
+
+
+
+
+
+/* smoothes out the scrolling on certain broswers */
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 /* colour when selecting text */
 ::selection {
@@ -110,79 +132,75 @@ p {
   background: rgba(255,251,0,0.99);
 }
 
-/* background colours */
-.bg-1 {
-  background: #0029BF;
+
+.align-centre {
+  text-align: center;
 }
 
-.link-1 {
-  color: black;
-  text-decoration: underline;
+.align-left {
+  text-align: left;
+}
+
+.white {
+  color: white;
 }
 
 /* styles for green links */
 .green-link {
-  color: #00FFC9;
+  color: #00FB54;
   text-decoration: none;
 }
 .green-link:hover {
-  color: black;
-  background-color: #00FFC9;
+  color: #00FB54;
+  text-decoration: underline;
 }
 
 /* size of intro text on viewport */
 .header {
-  margin-top: -140px;
-  height: 100vh;
+  margin-top: -200px;
   width: 200vw;
 }
+
+
 
 /* both texts for intro */
 .top-title,
 .bottom-title {
-  text-transform: uppercase;
-  margin-top: -140px;
+  margin-top: -250px;
   white-space: nowrap;
 }
 
 /* specific to first line of intro */
 .top-title {
-  margin-left: -300px;
+  margin-left: -900px;
 }
+
+
+
 
 /* specific to second line of intro */
 .bottom-title {
-  margin-left: -2800px;
+  margin-left: -250px;
+  white-space: nowrap;
 }
 
 /* makes content indented */
 .content-indented {
   padding-top: 5%;
-  padding-right: 25%;
-  padding-left: 15%;
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
-.tight-margin {
-  margin-top: 32px;
-  margin-bottom: 32px;
+
+
+.loose-padding {
+  padding-bottom: 100px;
 }
 
 .loose-margin {
   margin-bottom: 100px;
 }
 
-.loose-padding {
-  padding-bottom: 100px;
-}
-
-/* indents text with black background */
-.assistance-intro {
-  background: black;
-  padding-top: 80px;
-  padding-right: 30%;
-  padding-bottom: 48px;
-  padding-left: 15%;
-}
 
 /* specific padding for when 2 text elements above and below one another */
 .text-block {
@@ -190,15 +208,6 @@ p {
   padding-bottom: 10px;
 }
 
-/* specific class for email on a tag */
-.project-text {
-  color: #55E5EF;
-}
-
-/* makes text purple */
-.purple-text {
-  color: #450077;
-}
 
 .logo-image{
   display: flex;
@@ -207,40 +216,13 @@ p {
   margin-bottom: 56px;
 }
 
-/* makes logo 100px in height */
-.logo-1 {
-  height: 100px;
-  display: inline;
-  margin-right: 32px;
-}
-
-.logo {
-  height: 100px;
-  display: inline;
-  margin-right: 32px;
-  margin-left: 32px;
-}
-
-.inline {
-  display: inline;
-}
-
-/* specific class for project text */
-.mail-text {
-  color: #FFF900;
-}
-.mail-text:hover {
-  color: black;
-  background-color: #FFF900;
-}
-
 /* makes button sticky after scroll */
 .sticky-button-portfolio {
   position: fixed;
   top: 100px;
   right: 50px;
 }
-.sticky-button-cv {
+.sticky-button {
   position: fixed;
   top: 100px;
   right: 50px;
@@ -252,10 +234,10 @@ p {
   height: 72px;
   font-family: inherit;
   font-size: 24px;
-  color: #000;
-  background: #fff;
+  color: #171516;
+  background: #00FB54;
   border-radius: 100px;
-  width: 250px;
+  width: 200px;
   cursor: pointer;
   border: 0;
 
@@ -272,26 +254,22 @@ p {
   -webkit-transition: background 0.3s ease; /*safari and chrome */
 }
 .button-portfolio:hover {
-  background: #00FFC9;
+  background: white;
 }
 .button-portfolio:focus {
   outline: 0;
 }
 
-.width-full {
-  max-width: 100%;
-  margin-bottom: -4px;
-}
 
 /* styling for cv button */
 .button-cv {
   height: 72px;
   font-family: inherit;
   font-size: 24px;
-  color: #001991;
-  background: #fff;
+  color: #171516;
+  background: #00FB54;
   border-radius: 100px;
-  width: 250px;
+  width: 200px;
   cursor: pointer;
   border:0;
 
@@ -308,63 +286,23 @@ p {
   -webkit-transition: background 0.3s ease; /*safari and chrome */
 }
 .button-cv:hover {
-  background: #001991;
-  color: #fff;
+  background: white;
 }
 .button-cv:focus {
   outline: 0;
 }
 
-/* centres images */
-.home-img {
-  width: 80%;
-  position: relative;
-}
-
-.centre-img {
-  padding-top: 64px;
-  width: 75%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* full width image */
-.fullwidth-img {
-  width: 100%;
+.width-full {
+  max-width: 100%;
   margin-bottom: -4px;
-  position: relative;
 }
-
-/* text styles for sections */
-.title-1 {
-  color: #00FFFF;
-  margin-top: -30px;
-}
-.title-2 {
-  color: #2F3353;
-  margin-top: -50px;
-}
-.title-3 {
-  color: #55E5EF;
-  margin-top: -80px;
-}
-.title-4 {
-  color: #FFFB00;
-  margin-top: -80px;
-}
-
 
 /* makes counter invisible */
 #count {
   display: none;
 }
 
-/* pushes project 1 down out of vh */
-#div2 {
-  margin-top: -200px;
-  padding-top: 400px;
-}
+
 
 /* styles for 0 - 640 */
 @media only screen and (max-width: 640px) {
@@ -374,7 +312,7 @@ p {
       font-size: 200px;
     }
   h2 {
-      font-size: 72px;
+      font-size: 40px;
     }
   h3 {
       font-size: 32px;
@@ -386,26 +324,41 @@ p {
   h5 {
       font-size: 24px;
       line-height: 32px;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
 
-  /* link styles */
+
+    .header {
+      margin-top: 0;
+      width: 200vw
+    }
+
+    .top-title,
+    .bottom-title {
+      margin-top: -75px;
+      white-space: nowrap;
+    }
+
+    /* specific to first line of intro */
+    .top-title {
+      margin-left: -400px;
+    }
+
+    /* specific to second line of intro */
+    .bottom-title {
+      margin-left: -800px;
+      white-space: nowrap;
+    }
+
   p {
       font-size: 24px;
       line-height: 32px;
     }
+
+    /* link styles */
   a {
     font-size: 24px;
   }
-
-  /* makes cv text indented */
-  .cv-text {
-    width: 80%;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-bottom: 5%;
-  }
-
 
   /* specific padding for when 2 text elements next to one another */
   .text-block {
@@ -414,24 +367,23 @@ p {
   }
 
   /* text for intro */
-  .top-title,
+  /* .top-title,
   .bottom-title {
-      text-transform: uppercase;
-      margin-top: -60px;
+      margin-top: -250px;
     }
 
   .bottom-title {
       margin-left: -1200px;
-    }
+    } */
 
   /* size of text on viewport */
-  .header {
+  /* .header {
       margin-top: -80px;
       width: 150vw;
-    }
+    } */
 
   /* makes button sticky after scroll */
-  .sticky-button-portfolio {
+  /* .sticky-button-portfolio {
     top: 80vh;
     right: 62px;
     }
@@ -439,36 +391,15 @@ p {
   .sticky-button-cv {
     top: 80vh;
     right: 62px;
-  }
+  } */
 
-  .assistance-intro {
-    padding-right: 15%;
-  }
 
-  /* text styles for sections */
-  .listen-title {
-      margin-top: -60px;
-    }
-  .barclays-title {
-      margin-top: -40px;
-    }
-  .quickr-title {
-      margin-top: -55px;
-    }
-  .whodat-title {
-      margin-top: -40px;
-    }
 
-  /* pushes project 1 down out of vh */
-  #div2 {
-      margin-top: -50px;
-      padding-top: 0;
-    }
- }
+
 
  /* makes content indented */
  .content-indented {
    padding-top: 5%;
-   padding-right: 15%;
-   padding-left: 15%;
+   padding-right: 5%;
+   padding-left: 5%;
  }
