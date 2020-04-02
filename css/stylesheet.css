@@ -347,7 +347,6 @@ html {
     /* specific to second line of intro */
     .bottom-title {
       margin-left: -800px;
-      white-space: nowrap;
     }
 
   p {
