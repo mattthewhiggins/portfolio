@@ -159,16 +159,15 @@ html {
 
 /* size of intro text on viewport */
 .header {
-  margin-top: -200px;
+margin-top: 75px;
   width: 200vw;
 }
-
 
 
 /* both texts for intro */
 .top-title,
 .bottom-title {
-  margin-top: -250px;
+  margin-top: -275px;
   white-space: nowrap;
 }
 
@@ -180,7 +179,7 @@ html {
 
 /* specific to second line of intro */
 .bottom-title {
-  margin-left: -250px;
+  margin-left: -850px;
   white-space: nowrap;
 }
 
