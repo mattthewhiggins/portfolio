@@ -11,19 +11,6 @@ document.onscroll = function() {
     {
     		curDiv = allDivs[i];
 
-
-        // The code below makes the background color change when the scroll top passes the 2/3 of the previous div.
-
-        // heightBefore = 0;
-        // if (i > 0){
-        // 		heightBefore = allDivs[i-1].offsetHeight / 3;
-        // }
-				//
-        // if (scrollTop > curDiv.offsetTop - heightBefore){
-        // 		color = curDiv.getAttribute("data-color");
-        //   	document.body.style.background = color;
-        // }
-
     }
 };
 
@@ -33,9 +20,7 @@ document.onscroll = function() {
 var topTitle = $('.top-title'),
 		bottomTitle = $('.bottom-title');
 
-var fadeStart = 10,
-		fadeUntil = 10000,
-		moveSpeed = 2; // Higher = slower
+var moveSpeed = 2; // Higher = slower
 
 
 $(window).scroll(function(e) {
@@ -44,13 +29,8 @@ $(window).scroll(function(e) {
 		var topTitlePos = scrollTop / moveSpeed + 'px';
 		var bottomTitlePos = scrollTop / moveSpeed + 'px';
 
-		if (scrollTop <= fadeStart ) {
-				opacity = 1;
-		} else if ( scrollTop <= fadeUntil ) {
-				opacity = 1 - scrollTop / fadeUntil;
-		}
 
-		topTitle.css({'transform': 'translateX(' + topTitlePos + ')', 'opacity': opacity});
-		bottomTitle.css({'transform': 'translateX(-' + bottomTitlePos + ')', 'opacity': opacity});
+		topTitle.css({'transform': 'translateX(' + topTitlePos + ')'});
+		bottomTitle.css({'transform': 'translateX(-' + bottomTitlePos + ')'});
 
 });
