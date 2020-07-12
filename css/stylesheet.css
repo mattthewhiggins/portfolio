@@ -11,9 +11,6 @@ body {
   background: #fff;
   font-family: 'CircularStd-Black', sans-serif;
   margin: 0;
-  will-change: background;
-  -webkit-transition: background  1.5s;
-  -o-transition: background  1.5s;
   max-width: 100vw;
   overflow-x: hidden; /* for homepage text, as it's off-screen */
 }
@@ -50,7 +47,7 @@ h1 {
   font-size: 600px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000;
+  color: #F6F6F6;
   margin-top: -100px;
   margin-bottom: 0;
 }
@@ -88,10 +85,18 @@ p {
   font-weight: lighter;
 }
 
+span {
+  font-family: 'CircularStd-Book';
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #2177FE;
+}
 
 
 .black-body {
-  background-color: black;
+  background-color: #000;
 }
 
 
@@ -147,13 +152,13 @@ html {
   color: white;
 }
 
+
 /* styles for green links */
-.green-link {
-  color: #00FB54;
+.link {
+  color: #2177FE;
   text-decoration: none;
 }
-.green-link:hover {
-  color: #00FB54;
+.link:hover {
   text-decoration: underline;
 }
 
@@ -163,6 +168,10 @@ margin-top: 75px;
   width: 200vw;
 }
 
+.pdf-link {
+  display: inline-block;
+  padding-right: 10px;
+}
 
 /* both texts for intro */
 .top-title,
@@ -233,8 +242,8 @@ margin-top: 75px;
   height: 72px;
   font-family: inherit;
   font-size: 24px;
-  color: #171516;
-  background: #00FB54;
+  color: #fff;
+  background: #0D141F;
   border-radius: 100px;
   width: 200px;
   cursor: pointer;
@@ -253,7 +262,9 @@ margin-top: 75px;
   -webkit-transition: background 0.3s ease; /*safari and chrome */
 }
 .button-portfolio:hover {
-  background: white;
+  color: #0D141F;
+  background: #F6F6F6;
+
 }
 .button-portfolio:focus {
   outline: 0;
@@ -265,8 +276,8 @@ margin-top: 75px;
   height: 72px;
   font-family: inherit;
   font-size: 24px;
-  color: #171516;
-  background: #00FB54;
+  color: #fff;
+  background: #0D141F;
   border-radius: 100px;
   width: 200px;
   cursor: pointer;
@@ -285,7 +296,8 @@ margin-top: 75px;
   -webkit-transition: background 0.3s ease; /*safari and chrome */
 }
 .button-cv:hover {
-  background: white;
+  color: #0D141F;
+  background: #F6F6F6;
 }
 .button-cv:focus {
   outline: 0;
@@ -356,6 +368,7 @@ margin-top: 75px;
     /* link styles */
   a {
     font-size: 24px;
+    text-decoration: none;
   }
 
   /* specific padding for when 2 text elements next to one another */
