@@ -95,6 +95,11 @@ span {
 }
 
 
+.grey {
+    color: #989FAA;
+  }
+
+
 .black-body {
   background-color: #000;
 }
@@ -123,7 +128,9 @@ background: #FF004F;
 }
 
 
-
+.smaller {
+  height: 40px;
+}
 
 
 /* smoothes out the scrolling on certain broswers */
@@ -225,11 +232,7 @@ margin-top: 75px;
 }
 
 /* makes button sticky after scroll */
-.sticky-button-portfolio {
-  position: fixed;
-  top: 100px;
-  right: 50px;
-}
+
 .sticky-button {
   position: fixed;
   top: 100px;
@@ -238,9 +241,9 @@ margin-top: 75px;
 }
 
 /* styling for portfolio button */
-.button-portfolio {
+.button {
   height: 72px;
-  font-family: inherit;
+  font-family: 'CircularStd-Book';
   font-size: 24px;
   color: #fff;
   background: #0D141F;
@@ -261,27 +264,28 @@ margin-top: 75px;
   -moz-transition: background 0.3s ease; /* Firefox */
   -webkit-transition: background 0.3s ease; /*safari and chrome */
 }
-.button-portfolio:hover {
+.button:hover {
   color: #0D141F;
   background: #F6F6F6;
 
 }
-.button-portfolio:focus {
+.button:focus {
   outline: 0;
 }
 
 
 /* styling for cv button */
-.button-cv {
+.button-project {
   height: 72px;
-  font-family: inherit;
+  font-family: 'CircularStd-Book';
   font-size: 24px;
   color: #fff;
-  background: #0D141F;
+  background: #2177FE;
   border-radius: 100px;
   width: 200px;
   cursor: pointer;
   border:0;
+  margin-bottom: 32px;
 
   transition: color 0.3s ease; /* vendorless fallback */
   -o-transition: color 0.3s ease; /* opera */
@@ -295,11 +299,11 @@ margin-top: 75px;
   -moz-transition: background 0.3s ease; /* Firefox */
   -webkit-transition: background 0.3s ease; /*safari and chrome */
 }
-.button-cv:hover {
+.button-project:hover {
   color: #0D141F;
   background: #F6F6F6;
 }
-.button-cv:focus {
+.button-project:focus {
   outline: 0;
 }
 
@@ -308,11 +312,101 @@ margin-top: 75px;
   margin-bottom: -4px;
 }
 
+.blue-padding {
+  background: #ECF4FE;
+  padding-bottom: 64px;
+}
+
 /* makes counter invisible */
 #count {
   display: none;
 }
 
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+
+.row {
+  position: relative;
+  width: 100%;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+  .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 
 /* styles for 0 - 640 */
@@ -370,6 +464,7 @@ margin-top: 75px;
     font-size: 24px;
     text-decoration: none;
   }
+
 
   /* specific padding for when 2 text elements next to one another */
   .text-block {

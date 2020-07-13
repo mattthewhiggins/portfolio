@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>deltatre</title>
+    <g id="deltatre" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#222554" x="0" y="0" width="40" height="40" rx="8"></rect>
+        <g id="svgexport-3" transform="translate(8.000000, 8.000000)" fill-rule="nonzero">
+            <g id="Group">
+                <path d="M18.29,8.388 C16.361,6.48 13.623,5.286 10.586,5.286 C4.739,5.286 2.66453526e-14,9.7 2.66453526e-14,15.143 C2.66453526e-14,20.586 4.739,25 10.585,25 C13.705,25 16.508,23.742 18.445,21.743 L18.445,24.531 L23.892,24.531 L23.892,0 L18.29,1.85 L18.29,8.388 Z" id="Path" fill="#F75258"></path>
+                <path d="M11.847,20.729 C8.291,20.729 5.407,18.259 5.407,15.211 C5.407,12.164 8.287,9.69 11.842,9.69 C15.398,9.69 18.284,12.16 18.284,15.208 C18.284,18.255 15.4,20.725 11.842,20.725 L11.848,20.729 L11.847,20.729 Z" id="Path" fill="#222554"></path>
+            </g>
+        </g>
+    </g>
+</svg>
