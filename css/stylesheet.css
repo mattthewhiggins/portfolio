@@ -243,6 +243,11 @@ position: relative;
   margin-bottom: 56px;
 }
 
+.logo-pad {
+padding-right: 30px;
+}
+
+
 /* makes button sticky after scroll */
 
 .sticky-button {
