@@ -95,6 +95,7 @@ span {
 }
 
 
+
 .grey {
     color: #989FAA;
   }
@@ -155,6 +156,8 @@ html {
   text-align: left;
 }
 
+
+
 .white {
   color: white;
 }
@@ -171,8 +174,17 @@ html {
 
 /* size of intro text on viewport */
 .header {
-margin-top: 75px;
+  margin-top: 75px;
   width: 200vw;
+position: relative;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 1;
+  left: 1%;
+  width: 100%;
+
 }
 
 .pdf-link {
@@ -240,6 +252,13 @@ margin-top: 75px;
   z-index: 1;
 }
 
+.sticky-back {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  z-index: 1;
+}
+
 /* styling for portfolio button */
 .button {
   height: 72px;
@@ -304,6 +323,39 @@ margin-top: 75px;
   background: #F6F6F6;
 }
 .button-project:focus {
+  outline: 0;
+}
+
+/* styling for cv button */
+.button-back {
+  height: 72px;
+  font-family: 'CircularStd-Book';
+  font-size: 24px;
+  color: #0D141F;
+  background: #F6F6F6;
+  border-radius: 100px;
+  width: 180px;
+  cursor: pointer;
+  border:0;
+  margin-bottom: 32px;
+
+  transition: color 0.3s ease; /* vendorless fallback */
+  -o-transition: color 0.3s ease; /* opera */
+  -ms-transition: color 0.3s ease; /* IE 10 */
+  -moz-transition: color 0.3s ease; /* Firefox */
+  -webkit-transition: color 0.3s ease; /*safari and chrome */
+
+  transition: background 0.3s ease; /* vendorless fallback */
+  -o-transition: background 0.3s ease; /* opera */
+  -ms-transition: background 0.3s ease; /* IE 10 */
+  -moz-transition: background 0.3s ease; /* Firefox */
+  -webkit-transition: background 0.3s ease; /*safari and chrome */
+}
+.button-back:hover {
+  color: #fff;
+  background: #0D141F;
+}
+.button-back:focus {
   outline: 0;
 }
 
