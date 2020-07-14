@@ -370,6 +370,7 @@ padding-right: 30px;
 .hero {
   width: 100%;
   height: auto;
+  margin-left: 0;
 }
 
 .blue-padding {
@@ -500,8 +501,10 @@ padding-right: 30px;
 
     .hero {
       width: auto;
-      height: 50vh;
+      height: 55vh;
+      margin-left: -100px;
     }
+
 
     .top-title,
     .bottom-title {
