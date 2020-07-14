@@ -124,14 +124,13 @@ span {
   background: #0F1627;
 }
 
-.section-5 {
-background: #FF004F;
-}
 
 
-.smaller {
+.logo {
   height: 40px;
+  width: auto;
 }
+
 
 
 /* smoothes out the scrolling on certain broswers */
@@ -156,14 +155,13 @@ html {
   text-align: left;
 }
 
-
-
+/* text colour for dark bg */
 .white {
   color: white;
 }
 
 
-/* styles for green links */
+/* styles for links */
 .link {
   color: #2177FE;
   text-decoration: none;
@@ -217,14 +215,14 @@ position: relative;
 }
 
 
-
+/* big padding for bottom of section */
 .loose-padding {
   padding-bottom: 100px;
 }
 
-.loose-margin {
+/* .loose-margin {
   margin-bottom: 100px;
-}
+} */
 
 
 /* specific padding for when 2 text elements above and below one another */
@@ -234,9 +232,7 @@ position: relative;
 }
 
 
-.logo-image{
-  display: flex;
-  align-items: center;
+.logo-group {
   margin-top: 56px;
   margin-bottom: 56px;
 }
@@ -246,24 +242,12 @@ padding-right: 30px;
 }
 
 
-/* makes button sticky after scroll */
-
-.sticky-button {
+/* styling for portfolio button */
+.button {
   position: fixed;
   top: 100px;
   right: 50px;
   z-index: 1;
-}
-
-.sticky-back {
-  position: fixed;
-  top: 100px;
-  left: 50px;
-  z-index: 1;
-}
-
-/* styling for portfolio button */
-.button {
   height: 72px;
   font-family: 'CircularStd-Book';
   font-size: 24px;
@@ -338,6 +322,10 @@ padding-right: 30px;
   background: #F6F6F6;
   border-radius: 100px;
   width: 180px;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  z-index: 1;
   cursor: pointer;
   border:0;
   margin-bottom: 32px;
@@ -494,15 +482,20 @@ padding-right: 30px;
       margin-bottom: 32px;
     }
 
+    h6 {
+      font-size: 24px;
+    }
+
     .header {
       margin-top: 0;
       width: 200vw
     }
 
     .hero {
+      height: 50vh;
       width: auto;
-      height: 55vh;
       margin-left: -100px;
+      overflow-x: hidden;
     }
 
 
@@ -541,42 +534,61 @@ padding-right: 30px;
   }
 
 
+  .button {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    height: 50px;
+    font-size: 18px;
+    width: 120px;
+  }
 
+  .button-back {
+    position: absolute;
+    top: 40px;
+    left: 24px;
+    height: 50px;
+    font-size: 18px;
+    width: 120px;
+  }
 
-  /* text for intro */
-  /* .top-title,
-  .bottom-title {
-      margin-top: -250px;
-    }
+  .button-project {
+      height: 50px;
+      font-size: 18px;
+      width: 140px;
+  }
 
-  .bottom-title {
-      margin-left: -1200px;
-    } */
+  .logo {
+    height: 24px;
+    width: auto;
+  }
 
-  /* size of text on viewport */
-  /* .header {
-      margin-top: -80px;
-      width: 150vw;
-    } */
+  .eagle {
+    height: 24px;
+    width: auto;
+  }
 
-  /* makes button sticky after scroll */
-  /* .sticky-button-portfolio {
-    top: 80vh;
-    right: 62px;
-    }
+.logo-group {
+  margin-top: 32px;
+  margin-bottom: 32px;
 
-  .sticky-button-cv {
-    top: 80vh;
-    right: 62px;
-  } */
+}
 
-
-
-
+  .logo-pad {
+    height: 60px;
+  }
 
  /* makes content indented */
  .content-indented {
    padding-top: 5%;
    padding-right: 5%;
    padding-left: 5%;
+ }
+
+ .loose-padding {
+   padding-bottom: 32px;
+ }
+
+ .section-1 {
+   padding-bottom: 32px;
  }
