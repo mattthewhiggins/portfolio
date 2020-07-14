@@ -183,8 +183,6 @@ position: relative;
   position: absolute;
   z-index: 1;
   left: 1%;
-  width: 100%;
-
 }
 
 .pdf-link {
@@ -369,6 +367,11 @@ padding-right: 30px;
   margin-bottom: -4px;
 }
 
+.hero {
+  width: 100%;
+  height: auto;
+}
+
 .blue-padding {
   background: #ECF4FE;
   padding-bottom: 64px;
@@ -466,6 +469,7 @@ padding-right: 30px;
   }
 
 
+
 /* styles for 0 - 640 */
 @media only screen and (max-width: 640px) {
 
@@ -474,7 +478,7 @@ padding-right: 30px;
       font-size: 200px;
     }
   h2 {
-      font-size: 40px;
+      font-size: 32px;
     }
   h3 {
       font-size: 32px;
@@ -489,10 +493,14 @@ padding-right: 30px;
       margin-bottom: 32px;
     }
 
-
     .header {
       margin-top: 0;
       width: 200vw
+    }
+
+    .hero {
+      width: auto;
+      height: 50vh;
     }
 
     .top-title,
@@ -528,6 +536,9 @@ padding-right: 30px;
     padding-top: 0;
     padding-bottom: 10px;
   }
+
+
+
 
   /* text for intro */
   /* .top-title,
