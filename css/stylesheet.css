@@ -94,7 +94,11 @@ span {
   color: #2177FE;
 }
 
-
+hr {
+  background-color: #E5EBEE;
+  height: 1px;
+  border: none;
+}
 
 .grey {
     color: #989FAA;
