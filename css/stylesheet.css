@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-size: 72px;
+  font-size: 56px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -100,11 +100,28 @@ hr {
   border: none;
 }
 
+ul {
+  font-family: 'CircularStd-Book';
+  font-size: 54px;
+  line-height: 68px;
+  font-weight: lighter;
+}
+
+.large-text {
+  font-size: 120px;
+}
+
 .grey {
     color: #989FAA;
   }
 
+  .green {
+    color: #0CA028
+  }
 
+.tight {
+  margin-bottom: 18px;
+}
 
 .wrapper {
   overflow: hidden;
@@ -212,6 +229,16 @@ position: relative;
   padding-top: 5%;
   padding-right: 20%;
   padding-left: 20%;
+}
+
+.indented {
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.list-space {
+  margin-top: 8px;
+  margin-bottom: 72px;
 }
 
 
@@ -348,6 +375,21 @@ padding-right: 30px;
 }
 .button-back:focus {
   outline: 0;
+}
+
+
+/* styling for disabled button */
+.button-disabled {
+  height: 72px;
+  font-family: 'CircularStd-Book';
+  font-size: 24px;
+  color: white;
+  background: #0D141F;
+  border-radius: 100px;
+  width: 200px;
+  cursor: not-allowed;
+  border:0;
+  margin-bottom: 32px;
 }
 
 .width-full {
