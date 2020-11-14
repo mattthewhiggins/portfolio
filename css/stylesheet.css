@@ -115,6 +115,10 @@ ul {
     color: #989FAA;
   }
 
+  .blue {
+    color:#2177FE;
+  }
+
   .green {
     color: #0CA028
   }
@@ -379,12 +383,26 @@ padding-right: 30px;
 
 
 /* styling for disabled button */
-.button-disabled {
+.button-disabled-dark {
   height: 72px;
   font-family: 'CircularStd-Book';
   font-size: 24px;
   color: white;
   background: #0D141F;
+  border-radius: 100px;
+  width: 200px;
+  cursor: not-allowed;
+  border:0;
+  margin-bottom: 32px;
+}
+
+/* styling for disabled button */
+.button-disabled-light {
+  height: 72px;
+  font-family: 'CircularStd-Book';
+  font-size: 24px;
+  color: #0D141F;
+  background: #F6F6F6;
   border-radius: 100px;
   width: 200px;
   cursor: not-allowed;
