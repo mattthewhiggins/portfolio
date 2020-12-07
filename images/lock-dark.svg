@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>lock-dark</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="SFCompactDisplay-Regular, SF Compact Display" font-size="18" font-weight="normal">
-        <g id="lock-dark" fill="#0D141F" fill-rule="nonzero">
-            <text id="􀎡">
-                <tspan x="0.890137" y="17">􀎡</tspan>
-            </text>
+    <defs>
+        <path d="M13.9770511,18.9160156 C15.0668948,18.9160156 15.6030276,18.3798828 15.6030276,17.1933594 L15.6030276,11.0498047 C15.6030276,9.98632812 15.1635745,9.44140625 14.2583011,9.35351562 L14.2583011,7.27050781 C14.2583011,4.1328125 12.1840823,2.61230469 10.0043948,2.61230469 C7.81591825,2.61230469 5.7416995,4.1328125 5.7416995,7.27050781 L5.7416995,9.38867188 C4.90673856,9.52050781 4.39697294,10.0566406 4.39697294,11.0498047 L4.39697294,17.1933594 C4.39697294,18.3798828 4.93310575,18.9160156 6.0229495,18.9160156 L13.9770511,18.9160156 Z M7.16552762,9.35351562 L7.16552762,7.10351562 C7.16552762,5.06445312 8.46630887,3.97460938 10.0043948,3.97460938 C11.5336917,3.97460938 12.8344729,5.06445312 12.8344729,7.10351562 L12.8344729,9.3359375 L7.16552762,9.35351562 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lock-dark" fill-rule="nonzero">
+            <g id="􀎡">
+                <use fill="#000000" xlink:href="#path-1"></use>
+                <use fill="#0D141F" xlink:href="#path-1"></use>
+            </g>
         </g>
     </g>
 </svg>
