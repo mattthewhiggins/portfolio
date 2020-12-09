@@ -142,7 +142,7 @@ li {
 }
 
 .section-1 {
-  max-width: 85%;
+  max-width: 80%;
   background: white;
   padding-bottom: 100px;
 }
@@ -155,6 +155,9 @@ li {
   background: #0F1627;
 }
 
+.whitebg {
+  background-color: white;
+}
 
 .logo {
   height: 40px;
@@ -427,7 +430,6 @@ padding-right: 30px;
 .hero {
   width: 100%;
   height: auto;
-  margin-left: 0;
 }
 
 .blue-padding {
