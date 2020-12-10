@@ -536,7 +536,7 @@ padding-right: 30px;
 
   /* header styles */
   h1 {
-      font-size: 200px;
+      font-size: 160px;
     }
   h2 {
       font-size: 32px;
@@ -606,7 +606,6 @@ padding-right: 30px;
 
   .button {
     position: fixed;
-    top: 40px;
     right: 24px;
     height: 50px;
     font-size: 18px;
