@@ -117,6 +117,11 @@ li {
   line-height: 48px;
 }
 
+p.a {
+  font-style: normal;
+}
+
+
 .large-text {
   font-size: 120px;
 }
@@ -219,6 +224,12 @@ position: relative;
 .pdf-link {
   display: inline-block;
   padding-right: 10px;
+  font-family: 'CircularStd-Book';
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: lighter;
+  color: #2177FE;
+  text-decoration: none;
 }
 
 /* both texts for intro */
@@ -288,7 +299,7 @@ padding-right: 30px;
 /* styling for portfolio button */
 .button {
   position: fixed;
-  top: 100px;
+  top: 90px;
   right: 50px;
   z-index: 1;
   height: 72px;
@@ -539,7 +550,7 @@ padding-right: 30px;
       font-size: 160px;
     }
   h2 {
-      font-size: 32px;
+      font-size: 24px;
     }
   h3 {
       font-size: 32px;
@@ -610,6 +621,7 @@ padding-right: 30px;
     height: 50px;
     font-size: 18px;
     width: 120px;
+    top: 36px
   }
 
   .button-back {
@@ -667,8 +679,12 @@ padding-right: 30px;
    margin-bottom: -4px;
  }
 
-
  .badge {
   background-image: url(/images/badge.svg);
   width: 32px;
+}
+
+.pdf-link {
+  font-size: 24px;
+
 }
