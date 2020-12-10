@@ -213,7 +213,7 @@ position: relative;
 .absolute {
   position: absolute;
   z-index: 1;
-  left: 1%;
+  left: 0;
 }
 
 .pdf-link {
@@ -430,6 +430,7 @@ padding-right: 30px;
 .hero {
   width: 100%;
   height: auto;
+  margin-bottom: -4px;
 }
 
 .blue-padding {
@@ -563,9 +564,7 @@ padding-right: 30px;
     }
 
     .hero {
-      height: 55vh;
-      width: auto;
-      margin-left: -200px;
+      width: 100%;
       overflow-x: hidden;
     }
 
