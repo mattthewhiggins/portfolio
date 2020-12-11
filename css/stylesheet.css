@@ -93,12 +93,18 @@ p {
 
 span {
   font-family: 'CircularStd-Book';
-  font-size: 32px;
+  font-size: 24px;
   line-height: 42px;
   font-weight: lighter;
   text-decoration: none;
-  color: #2177FE;
+  color: #fff;
 }
+
+span:hover {
+color: black;
+}
+
+
 
 hr {
   background-color: #E5EBEE;
@@ -121,6 +127,9 @@ p.a {
   font-style: normal;
 }
 
+.hero-m {
+  width: 50vh;
+}
 
 .large-text {
   font-size: 120px;
@@ -199,13 +208,22 @@ html {
 }
 
 
+
+
 /* styles for links */
 .link {
   color: #2177FE;
   text-decoration: none;
+  border-bottom: 3px solid transparent;
+
+
+
 }
 .link:hover {
-  text-decoration: underline;
+  transition: 300ms;
+
+  border-bottom: 3px solid #2177FE;
+
 }
 
 /* size of intro text on viewport */
@@ -377,7 +395,7 @@ padding-right: 30px;
   border-radius: 100px;
   width: 180px;
   position: fixed;
-  top: 100px;
+  top: 90px;
   left: 50px;
   z-index: 1;
   cursor: pointer;
@@ -444,6 +462,27 @@ padding-right: 30px;
   margin-bottom: -4px;
 }
 
+.profile {
+  top: 0;
+  width: 40%;
+  display: inline-block;
+  margin-right: 50px;
+
+}
+
+.profile-text {
+  width: 50%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  }
+
+.links {
+  width: 100%;
+  display: inline-block;
+  margin-right: 50px;
+}
+
 .blue-padding {
   background: #ECF4FE;
   padding-bottom: 64px;
@@ -452,6 +491,18 @@ padding-right: 30px;
 /* makes counter invisible */
 #count {
   display: none;
+}
+
+.rose {
+  height: 32px;
+  width: auto;
+}
+
+.cv-hero {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 90px;
 }
 
 /* ==== GRID SYSTEM ==== */
@@ -480,65 +531,79 @@ padding-right: 30px;
   min-height: 0.125rem;
 }
 
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
 
-  .col-1 {
-    width: 4.33%;
-  }
+.col-1-sm {
+  width: 4.33%;
+}
 
-  .col-2 {
-    width: 12.66%;
-  }
+.col-2-sm {
+  width: 12.66%;
+}
 
-  .col-3 {
-    width: 21%;
-  }
+.col-3-sm {
+  width: 21%;
+}
 
-  .col-4 {
-    width: 29.33%;
-  }
+.col-4-sm {
+  width: 29.33%;
+}
 
-  .col-5 {
-    width: 37.66%;
-  }
+.col-5-sm {
+  width: 37.66%;
+}
 
-  .col-6 {
-    width: 46%;
-  }
+.col-6-sm {
+  width: 46%;
+}
 
-  .col-7 {
-    width: 54.33%;
-  }
+.col-7-sm {
+  width: 54.33%;
+}
 
-  .col-8 {
-    width: 62.66%;
-  }
+.col-8-sm {
+  width: 62.66%;
+}
 
-  .col-9 {
-    width: 71%;
-  }
+.col-9-sm {
+  width: 71%;
+}
 
-  .col-10 {
-    width: 79.33%;
-  }
+.col-10-sm {
+  width: 79.33%;
+}
 
-  .col-11 {
-    width: 87.66%;
-  }
+.col-11-sm {
+  width: 87.66%;
+}
 
-  .col-12 {
-    width: 96%;
-  }
+.col-12-sm {
+  width: 96%;
+}
 
-  .hidden-sm {
-    display: block;
-  }
-  .row {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
 
 
 
@@ -625,19 +690,15 @@ padding-right: 30px;
   }
 
   .button-back {
-    position: absolute;
-    top: 40px;
+    position: fixed;
+    top: 36px;
     left: 24px;
     height: 50px;
     font-size: 18px;
     width: 120px;
   }
 
-  .button-project {
-      height: 50px;
-      font-size: 18px;
-      width: 140px;
-  }
+
 
   .logo {
     height: 24px;
@@ -666,6 +727,11 @@ padding-right: 30px;
    padding-left: 5%;
  }
 
+ .indented {
+   padding-right: 5%;
+   padding-left: 5%;
+ }
+
  .loose-padding {
    padding-bottom: 32px;
  }
@@ -686,5 +752,115 @@ padding-right: 30px;
 
 .pdf-link {
   font-size: 24px;
-
 }
+
+.row {
+  position: relative;
+  width: 100%;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-full{
+   display:block;
+  }
+
+ .image-mobile{
+  display:none;
+ }
+
+
+
+.hidden-sm {
+  display: block;
+}
+
+.profile-text {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+  .rose {
+    height: 24px;
+    width: auto;
+  }
+
+
+
+  .image-full{
+     display:block;
+    }
+
+   .image-mobile{
+    display:none;
+   }
+
+   .container {
+       width: 100%;
+     }
+
+     .col-1 {
+       width: 4.33%;
+     }
+
+     .col-2 {
+       width: 12.66%;
+     }
+
+     .col-3 {
+       width: 21%;
+     }
+
+     .col-4 {
+       width: 29.33%;
+     }
+
+     .col-5 {
+       width: 37.66%;
+     }
+
+     .col-6 {
+       width: 46%;
+     }
+
+     .col-7 {
+       width: 54.33%;
+     }
+
+     .col-8 {
+       width: 62.66%;
+     }
+
+     .col-9 {
+       width: 71%;
+     }
+
+     .col-10 {
+       width: 79.33%;
+     }
+
+     .col-11 {
+       width: 87.66%;
+     }
+
+     .col-12 {
+       width: 96%;
+     }
+
+     .hidden-sm {
+       display: block;
+     }
+     .row {
+       position: relative;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+     .cv-hero {
+       padding-top: 36px;
+     }
